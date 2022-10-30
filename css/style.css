@@ -24,7 +24,6 @@ body {
     background-color: #FFFFFF;
     color:var(--title-text-color);
     font-size:14px;
-    margin:0;
 }
 
 .card-set {
@@ -82,10 +81,14 @@ img{
     margin-right: 93px;
 }
 
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
+    justify-content: center;
    
 }
 
@@ -149,6 +152,7 @@ img{
 /*----------Hero--------------*/
 .hero {
     background-color: var(--second-background-color);
+    padding: 200px 0;
 }
 .hero-title {
     margin-bottom: 30px;
@@ -158,6 +162,9 @@ img{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
     color: var(--white-color)
 }
 .button {
@@ -183,9 +190,10 @@ img{
    display: flex;
    align-items: center;
    gap: var(--indent);
-   align-items: flex-start;
 }
-
+.features {
+    padding-bottom:0;
+}
 
 .features-title {
     line-height: 1.14;
@@ -226,14 +234,6 @@ img{
 .team {
     background-color: var(--other-backround-color);
 }
-.team-wrapper{
-    padding-top: var(--indent);
-    padding-bottom: var(--indent);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow:  1px 3px rgba(0, 0, 0, 0.12);
-
-}
-
 
 .team .team-name {
     margin-bottom: 10px;
@@ -250,25 +250,37 @@ img{
     text-align: center;
     color: var(--paragraf-color)
  }
+ 
+.team-wrapper {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
  /*-------------Footer-------------*/
  .footer {
    background-color: var(--title-text-color);
+   padding-top: 60px;
+   padding-bottom:60px;
 }
 
- .logo-footer {
-    font-family: 'Raleway';
-    color: var(--primary-accent-color);
-    letter-spacing: 0.03em;
-    font-size:26px;
+.logo-footer {
+    margin-right: 0;
 }
 
  .logo .logo-studio {
     color: var(--white-color);
  }
- 
-.footer-address{
-    margin-top: 20px;
+
+.footer-logo {
+    margin-bottom: 20px;
 }
+
+.footer-address{
+    margin-bottom: 9px;
+}
+
 
  .address .address-name {
     line-height: 1.71;
@@ -297,6 +309,7 @@ img{
 .address .address-tel:focus{
     color: var(--primary-accent-color);
 }
+
 
 
 .button-portfolio {
